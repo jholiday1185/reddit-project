@@ -1,6 +1,13 @@
-import { combineReducers } from 'redux';
-import { configureStore }
+import { configureStore } from '@reduxjs/toolkit';
+import {  useDispatch  } from 'react-redux';
 import homePage from "./containers/HomePage/reducers"
 
-const reducers = combineReducers({ homePage });
 
+const store = configureStore({
+    reducer: 
+         homePage
+    
+})
+
+
+export default store;
